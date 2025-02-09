@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+    --primary-blue: rgb(143, 215, 237);
+    --secondary-blue: rgb(37, 135, 154);
+    --text: rgb(17, 49, 71);
+    --primary-pink: rgb(243, 186, 182);
+    --secondary-pink: rgb(136, 37, 77);
+    --title-font: Lora, Impact, serif;
+}
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    background-color: red;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+header, footer {
+    background-color: var(--primary-pink);
+    color: var(--text);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: var(--title-font);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-links {
+    box-shadow: 0 -2px 0 var(--primary-blue), 0 2px 0 var(--primary-blue);
+    display: grid;
+    grid-template-columns: 45px 55px 55px;
+    grid-gap: 25px;
+    padding: 2rem;
+    margin: 0 auto;
+    padding-right: 10rem;
+    justify-content: end;
+    justify-items: end;
+    a:link {
+        color: var(--secondary-blue);
+    }
+}
+
+main {
+    color: var(--text);
+    margin: 1rem auto;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: var(--title-font);
+    color: var(--secondary-pink);
+}
+
+.elements-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.books-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+.book-info {
+    box-shadow: 2px 0 0 var(--primary-blue);
+    text-align: right;
+    padding: 20px;
+}
+
+.book-and-review {
+    align-items: center;
+}
+
+.filter-panel {
+    outline: auto;
+    outline-color: var(--secondary-blue);
+}
