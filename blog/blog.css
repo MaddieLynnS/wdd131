@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 :root {
     --primary-blue: rgb(143, 215, 237);
-    --secondary-blue: rgb(37, 135, 154);
-    --text: rgb(17, 49, 71);
-    --primary-pink: rgb(243, 186, 182);
+    --secondary-blue: rgb(34, 116, 175);
+    --text: rgb(11, 33, 48);
+    --primary-pink: rgb(253, 226, 224);
     --secondary-pink: rgb(136, 37, 77);
     --title-font: Lora, Impact, serif;
 }
@@ -55,6 +55,7 @@ ul {
     a:link {
         color: var(--secondary-blue);
     }
+    background-color: white;
 }
 
 main {
@@ -67,6 +68,7 @@ main {
 h2 {
     font-family: var(--title-font);
     color: var(--secondary-pink);
+    margin-top: 25px;
 }
 
 .elements-container {
@@ -94,10 +96,16 @@ h2 {
     box-shadow: 2px 0 0 var(--primary-blue);
     text-align: right;
     padding: 20px;
+    line-height: .5;
 }
 
-.book-and-review {
-    align-items: center;
+.book-and-review img{
+    display: block;
+    margin: 0 auto;
+}
+
+.book-and-review p {
+    padding-top: 20px;
 }
 
 .filter-panel {
