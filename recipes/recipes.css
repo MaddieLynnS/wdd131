@@ -1,0 +1,172 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sriracha&display=swap");
+
+:root {
+    --title-font: Sriracha, cursive;
+    --text-font: Arial, Helvetica,sans-serif;
+    --primary-color: #2b6586;
+    --secondary-color: #e8aa5f;
+    --text-dark: #1f1b1b;
+    --text-light: #ebebeb;
+
+}
+
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Centers horizontally */
+    font-family: var(--text-font);
+    font-size: 20px;
+  }
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header img {
+    height: 70px;
+    max-width: 100%;
+}
+
+h1 {
+    margin: 20px;
+    font-family: var(--title-font);
+
+}
+
+h3 {
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: var(--title-font);
+    color: var(--primary-color);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    width: fit-content;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.search-bar img {
+    max-height: 30px;
+    padding: 5px;
+    max-width: 100%;
+}
+
+#recipe-search {
+    height: 40px;
+    width: 100%;
+}
+
+.recipe-container {
+    display: flex;
+    width: 100%;
+    border: 2px solid var(--text-dark);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.recipe-info {
+    flex: 1;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#tag {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.recipe-container img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+}
+
+footer a {
+    font-size: .6em;
+}
+
+footer .social a img {
+    height: 50px;
+    width: auto;
+    max-width: 100%;
+}
+
+footer .social {
+    min-height: 100px;
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+footer {
+    min-height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:600px) {
+    .recipe-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer .social {
+        justify-content: center;
+    }
+
+
+    footer .social a img {
+        justify-content: center;
+
+    }
+    
+}

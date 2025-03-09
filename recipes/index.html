@@ -1,0 +1,77 @@
+<!--recipes index.html-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sriracha&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Come HERE to get the best recipes in the 'hood!">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="http://127.0.0.1:5500/recipes/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Come HERE to get the best recipes in the 'hood!">
+    <meta name="author" content="Maddie Smith">
+    <script src="main.js" defer></script>
+    <title>RecipeBook</title>
+    <link rel="icon" href="images/recipe-book.png">
+    <link rel="stylesheet" href="recipes.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <img rel="icon" src="images/recipe-book.png" alt="Cute Cartoon Recipe Book">
+                <h1 class="recipe-title">RecipeBook</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="recipe-search" name="recipe-search" placeholder="Find a recipe" required>
+                <a href="#"><img src="images/search.svg" alt="search icon"></a>
+            </div>
+            
+        </header>
+        <main>
+            <section class="recipe-container">
+                <article class="recipe">
+                    <div>
+                        <img src="images/black-beans-and-rice.jpg" alt="Black beans and rice">
+                    </div>
+                    <div class="recipe-info">
+                        <div class="tags">
+                            <p id="tag">Southwest</p>
+                            <p id="tag">Entree</p>
+                        </div>
+                        <h3>Black Beans and Rice</h3>
+                        <span
+                            class="rating"
+                            role="img"
+                            aria-label="Rating: 3 out of 5 stars"
+                            >
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star">⭐</span>
+                            <span aria-hidden="true" class="icon-star-empty">☆</span>
+                            <span aria-hidden="true" class="icon-star-empty">☆</span>
+                        </span>
+                        <p>Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.</p>
+                    </div>
+                </article>
+            </section>
+    
+        </main>
+        <footer>
+            <div class="social">
+                <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+                <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+                <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+            </div>
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons" >Recipe icons created by Freepik - Flaticon</a>
+    
+        </footer>
+    </div>
+  </body>
+</html>
