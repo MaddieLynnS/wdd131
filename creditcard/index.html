@@ -25,22 +25,28 @@
                 </div>
 
                 <label for="cardNumber">CARD NUMBER</label>
-                <input type="number" id="cardNumber" name="cardNumber" 
-                placeholder="1234 5678 9012 3456" pattern="[0-9]{16}" required>
+                <input type="text" id="cardNumber" name="cardNumber" 
+                    placeholder="1234 5678 9012 3456" 
+                    pattern="^\d{16}$" 
+                    inputmode="numeric"
+                    required>
     
                 <div class="bottomRow">
                     <p id="cardHolderContainer">
                         <label for="holderName">CARD HOLDER</label>
-                        <input type="text" id="holderName" name="holderName" placeholder="JOHN DOE" required>
+                        <input type="text" id="holderName" name="holderName" 
+                            placeholder="JOHN DOE" 
+                            pattern="[^A-Za-z ]+$"
+                            required>
                     </p>
         
                     <div id="expirationDateContainer">
                         <label for="expiration">EXPIRATION</label>
                         <div class="expiration-inputs">
                             <input type="number" id="expirationMonth" name="expirationMonth" 
-                            min="01" max="12" placeholder="MM" required>
+                                min="1" max="12" placeholder="MM" required>
                             <input type="number" id="expirationYear" name="expirationYear"
-                            min="25" max="50" placeholder="YY" required>
+                            min="2025" max="2075" placeholder="YYYY" required>
                         </div>
                     </div>
                 </div>
@@ -53,8 +59,11 @@
 
                 <p id="backContainer">
                     <label for="backNumber">CVC/CVV</label>
-                    <input type="number" id="backNumber" name="cvcNumber" 
-                    placeholder="XXX" pattern="[0-9]{3}" required>
+                    <input type="text" id="backNumber" name="cvcNumber" 
+                        placeholder="XXX" 
+                        pattern="^\d{3,4}$"
+                        inputmode="numeric"
+                        required>
                 </p>
             </div>
 
