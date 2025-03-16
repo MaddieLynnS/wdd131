@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="description" content="Come HERE to get the best recipes in the 'hood!">
     <meta name="author" content="Maddie Smith">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js" defer></script>
     <title>RecipeBook</title>
     <link rel="icon" href="images/recipe-book.png">
     <link rel="stylesheet" href="recipes.css"/>
@@ -29,36 +29,12 @@
             </div>
             <div class="search-bar">
                 <input type="text" id="recipe-search" name="recipe-search" placeholder="Find a recipe" required>
-                <a href="#"><img src="images/search.svg" alt="search icon"></a>
+                <a href="#"><img src="images/search.svg" alt="search icon" id="search-image"></a>
             </div>
             
         </header>
         <main>
-            <section class="recipe-container">
-                <article class="recipe">
-                    <div>
-                        <img src="images/black-beans-and-rice.jpg" alt="Black beans and rice">
-                    </div>
-                    <div class="recipe-info">
-                        <div class="tags">
-                            <p id="tag">Southwest</p>
-                            <p id="tag">Entree</p>
-                        </div>
-                        <h3>Black Beans and Rice</h3>
-                        <span
-                            class="rating"
-                            role="img"
-                            aria-label="Rating: 3 out of 5 stars"
-                            >
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">☆</span>
-                            <span aria-hidden="true" class="icon-star-empty">☆</span>
-                        </span>
-                        <p>Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.</p>
-                    </div>
-                </article>
+            <section class="recipes">
             </section>
     
         </main>
