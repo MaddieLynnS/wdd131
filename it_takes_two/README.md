@@ -29,6 +29,9 @@ DUE April 5th- not a lot of time to pull this off
     April 28th- more images for pretend games that could come in the future
     April 29th- home page complete, search bar functional, CSS functioning
     April 30th- work on tic tac toe code on drive home
-    April 2nd- Tic tac toe game operational within webpage, timed questions should be implemented if not working
+    April 2nd- Tic tac toe game operational within webpage, questions should be implemented if not working
     April 4th- hangman game operational
     April 5th- final testing and turn in
+
+Other two-player games:
+    chess, infinite runner game, guessing game, checkers, connect four, dots and boxes
