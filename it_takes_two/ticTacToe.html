@@ -9,6 +9,7 @@
 
     <body>
         <header>
+            <div style="height: 50px;"></div>
             <div class="nav-bar">
                 <nav>
                     <a href="index.html">Home</a>
@@ -23,14 +24,18 @@
         </header>
         <div class="main-container"> 
             <main>
-                <div class="tictactoe-container">      
+                <div class="realgame-container">
                     <h1>Tic Tac Toe</h1>
-                    <img src="images/Tic-tac-toe-board.png">
-                    <label>Enter your row number here:</label>
-                    <input type="text" id="row-number" name="row-number" required>
-                    <label>Enter your column number here:</label>
-                    <input type="text" id="column-number" name="column-number" required>
-                </div> 
+                    <div class="tictactoe-container">      
+                        <img src="images/Tic-tac-toe-board.png">
+                        <div class="guess-container">
+                            <label>Enter your row number here:</label>
+                            <input type="text" id="row-number" name="row-number" required>
+                            <label>Enter your column number here:</label>
+                            <input type="text" id="column-number" name="column-number" required>
+                        </div>
+                    </div> 
+                </div>
             </main>
         </div>
 

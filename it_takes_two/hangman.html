@@ -9,6 +9,7 @@
 
     <body>
         <header>
+            <div style="height: 50px;"></div>
             <div class="nav-bar">
                 <nav>
                     <a href="index.html">Home</a>
@@ -23,13 +24,19 @@
         </header>
         <div class="main-container"> 
             <main>
-                <div class="hangman-container">
+                <div class="realgame-container">
                     <h1>Hangman</h1>
-                    <img src="images/Empty-Hangman.png" alt="Empty hangman board">
-                    <img src="images/Hangman-word.png" alt="Hangman word">
-                    <label>Enter your letter guess here:</label>
-                    <input type="text" id="letter-guess" name="letter-guess" required>
-                </div>     
+                    <div class="hangman-container">
+                        <div id="hangman-images">
+                            <img src="images/Empty-Hangman.png" alt="Empty hangman board">
+                            <img src="images/Hangman-word.png" alt="Hangman word">
+                        </div>
+                        <div class="guess-container">
+                            <label>Enter your letter guess here:</label>
+                            <input type="text" id="letter-guess" name="letter-guess" required>
+                        </div>
+                    </div>     
+                </div>
             
             </main>
         </div>
