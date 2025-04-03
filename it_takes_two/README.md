@@ -35,3 +35,11 @@ DUE April 5th- not a lot of time to pull this off
 
 Other two-player games:
     chess, infinite runner game, guessing game, checkers, connect four, dots and boxes
+
+Other bonus things to do:
+    Change colors for categories
+    Add hover/etc on Play Now button
+    Make text in inputs bigger
+    Restrictions on input boxes
+    Add numbers 1-3 on top and to left of tic tac toe
+    Add letters to left of hangman

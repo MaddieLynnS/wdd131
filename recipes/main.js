@@ -1,7 +1,6 @@
 import recipes from "./recipes.mjs";
 
 function getRandomNumber() {
-    //may need plus one, we shall see
     return Math.floor(Math.random() * recipes.length);
 }
 

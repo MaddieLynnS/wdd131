@@ -5,6 +5,8 @@
 		<title>it takes TWO - Hangman</title>
         <link rel="icon" href="images/it-takes-two-icon.png">
 		<link rel="stylesheet" href="it_takes_two.css" />
+        <script type="module" src="gameModal.js" defer></script>
+        <script type="module" src="hangman.js" defer></script>
 	</head>
 
     <body>
@@ -12,9 +14,11 @@
             <div style="height: 50px;"></div>
             <div class="nav-bar">
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="ticTacToe.html">Tic Tac Toe</a>
-                    <a href="hangman.html">Hangman</a>
+                    <div class="site-links">
+                        <a href="index.html">Home</a>
+                        <a href="ticTacToe.html">Tic Tac Toe</a>
+                        <a href="hangman.html">Hangman</a>
+                    </div>
                     <div class="search-bar">
                         <a href="#"><img src="images/search.svg" alt="search icon" id="search-image"></a>
                         <input type="text" id="game-search" name="game-search" placeholder="Find a game" required>
@@ -26,14 +30,18 @@
             <main>
                 <div class="realgame-container">
                     <h1>Hangman</h1>
+                    <p>How to Play: Guess the mystery word! Be careful- if you and your friend guess three wrong letters, it's game over!</p>
+                    <p id="turn-text">Player 1</p>
                     <div class="hangman-container">
                         <div id="hangman-images">
-                            <img src="images/Empty-Hangman.png" alt="Empty hangman board">
+                            <img src="images/Empty-Hangman.png" alt="Empty hangman board" id="hangman-board">
                             <img src="images/Hangman-word.png" alt="Hangman word">
                         </div>
                         <div class="guess-container">
                             <label>Enter your letter guess here:</label>
-                            <input type="text" id="letter-guess" name="letter-guess" required>
+                            <input type="text" id="letter-guess" name="letter-guess" placeholder="A-Z" required>
+
+                            <button id="take-turn">Guess Letter</button>
                         </div>
                     </div>     
                 </div>

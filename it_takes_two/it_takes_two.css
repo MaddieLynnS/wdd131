@@ -72,31 +72,40 @@ h3 {
   display: flex;
   justify-content: space-between; /* Spreads out items */
   align-items: center; /* Aligns items vertically */
-  width: 100%; /* Extends the navbar across the screen */
   background-color: var(--nav-background-color);
-  line-height: 3em;
+  line-height: 2em;
   text-align: center;
   font-size: 1.5em;
-  padding-left: 70px;
+  font-family: var(--heading-font);
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 40px;
 }
+
 
 nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
   width: 100%;
 }
 
-nav a {
-  padding: 1em;
-  min-width: 120px;
+.site-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.site-links a {
+  min-width: 150px;
   text-decoration: none;
   padding: 10px;
 }
-nav a:link,
-nav a:visited {
+.site-links a:link,
+.site-links a:visited {
   color: var(--nav-link-color);
 }
-nav a:hover {
+.site-links a:hover {
+  transition: var(--nav-hover-background-color) .3s ease, var(--nav-hover-link-color) .3s ease;
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
@@ -104,8 +113,7 @@ nav a:hover {
 .search-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: auto;
+  justify-content: end;
   width: 75%;
   gap: 5px;
 }
@@ -123,7 +131,8 @@ nav a:hover {
 .search-bar img {
   max-height: 30px;
   max-width: 100%;
-  margin: 0;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 
 #intro-paragraph {
@@ -148,10 +157,11 @@ nav a:hover {
   gap: 20px;
 }
 
-.game-image {
+.game-container img {
   border: 5px solid var(--secondary-color);
   border-radius: 5px;
-  width: auto;
+  height: 350px;
+  min-width: 350px;
   max-width: 100%;
 }
 
@@ -174,7 +184,7 @@ nav a:hover {
   background-color: var(--accent1-color);
   font-size: 25px;
   color: var(--secondary-color);
-  font-family: var(--text-font);
+  font-family: var(--heading-font);
 }
 
 #more-games {
@@ -183,6 +193,7 @@ nav a:hover {
 
 .category-container {
   border-top: 3px solid var(--accent1-color);
+  margin-bottom: 20px;
 }
 
 .question-categories {
@@ -205,16 +216,45 @@ footer {
   padding-top: 1em;
 }
 
+@media screen and (max-width:800px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .game-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .game {
+      flex-direction: column;
+  }
+}
+
 /* I think this generally would go on its own css file but I'm keeping it all together for simplicity */
 
 .tictactoe-container, .hangman-container {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  align-items: center;
+  justify-content: center;
 }
 
 .realgame-container h1 {
   margin-top: 0px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.realgame-container p {
+  margin-top: 2px;
   text-align: center;
 }
 
@@ -225,10 +265,40 @@ footer {
   object-fit: cover;
 }
 
+#hangman-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+  margin-bottom: 50px;
+}
+
+
 .guess-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-content: center;
   align-items: center;
+}
+
+.guess-container input {
+  border-radius: 5px;
+  height: 50px;
+  border: 2px solid var(--accent2-color);
+}
+
+#turn-text {
+  margin-bottom: 10px;
+}
+
+#take-turn {
+  border-radius: 5px;
+  height: 75px;
+  width: 200px;
+  background-color: var(--accent1-color);
+  font-size: 25px;
+  color: var(--secondary-color);
+  font-family: var(--second-heading);
+  margin: 20px;
 }
