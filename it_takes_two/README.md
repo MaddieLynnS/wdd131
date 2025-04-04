@@ -43,3 +43,10 @@ Other bonus things to do:
     Restrictions on input boxes
     Add numbers 1-3 on top and to left of tic tac toe
     Add letters to left of hangman
+    Add start button that triggers the modal rather than on page load
+    simplify button css for all buttons
+    Add heading in modal that displays which category was chosen for questions
+    keep track of which questions have already been shown so they don't get repetitive
+    Move x button in modal so it's actually above question box
+    Reroute someone back to home if they use the search bar on a different screen
+    Should the close-modal button be present for the beginning choose category screen?

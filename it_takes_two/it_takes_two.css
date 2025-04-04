@@ -245,6 +245,7 @@ footer {
   gap: 25px;
   align-items: center;
   justify-content: center;
+  font-family: var(--paragraph-font);
 }
 
 .realgame-container h1 {
@@ -301,4 +302,54 @@ footer {
   color: var(--secondary-color);
   font-family: var(--second-heading);
   margin: 20px;
+}
+
+
+/* Modal for questions between turns */
+
+.question-modal {
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#question-box {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  width: 1000px;
+  min-height: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 30px;
+  font-family: var(--paragraph-font);
+  text-align: center;
+}
+
+#question {
+  display: flex;
+  font-size: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 75px;
+  height: 100%;
+}
+
+.close-modal {
+  padding: 0;
+  justify-self: end;
+  margin: 10px;
+  width: 40px;
+  background-color: var(--accent2-color);
+  color: var(--headline-color-on-color);
+  font-family: var(--second-heading);
+  font-size: 20px;
 }
