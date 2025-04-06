@@ -23,7 +23,7 @@ function introTemplate() {
                 <button class="close-modal">X</button>
                 <div id="question-box">
                     <h2>Select a Category</h2>
-                    <div id="category-buttons">
+                    <div class="question-categories" id="category-buttons">
                         ${getCategories()}
                     </div>
                 </div>
@@ -33,14 +33,13 @@ function introTemplate() {
 
 function getCategories() {
     const categories = [...new Set(questions.map(q => q.category))];
-    return categories.map(category => `<button class="category" data-category="${category}">${category}</button>`).join("");
+    return categories.map(category => `<button class="category-button" data-category="${category}">${category}</button>`).join("");
 
 }
 
 function handleCategorySelection(event) {
-    if (event.target.classList.contains("category")) {
+    if (event.target.classList.contains("category-button")) {
         category = event.target.dataset.category;
-        console.log("Selected Category:", category);
         closeQuestion();
     }
 }

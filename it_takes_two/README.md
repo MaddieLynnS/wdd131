@@ -49,4 +49,6 @@ Other bonus things to do:
     keep track of which questions have already been shown so they don't get repetitive
     Move x button in modal so it's actually above question box
     Reroute someone back to home if they use the search bar on a different screen
-    Should the close-modal button be present for the beginning choose category screen?
+    Make the nav bar just "home" for small screens
+    Hide all question categories or make them smaller on small screen
+    even smaller screen handling

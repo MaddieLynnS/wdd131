@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Noticia+Text|Koulen");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Noticia+Text&family=Koulen&display=swap");
 
 :root {
   /* Site colors */
@@ -154,15 +154,14 @@ nav {
 .game {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
 }
 
 .game-container img {
   border: 5px solid var(--secondary-color);
   border-radius: 5px;
   height: 350px;
-  min-width: 350px;
-  max-width: 100%;
+  width: 350px;;
 }
 
 .tags {
@@ -209,6 +208,19 @@ nav {
   align-content: center;
   text-align: center;
   border-radius: 5px;
+}
+
+.category-button {
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+  align-content: center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--paragraph-color-on-color);
+  font-family: var(--paragraph-font);
+  font-size: 25px;
 }
 
 footer {
@@ -327,6 +339,7 @@ footer {
   min-height: 400px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 30px;
   font-size: 30px;
   font-family: var(--paragraph-font);
   text-align: center;
