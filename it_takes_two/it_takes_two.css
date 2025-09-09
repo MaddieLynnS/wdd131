@@ -4,7 +4,7 @@
   /* Site colors */
   --primary-color: #0CA2C0;
   --secondary-color: #34345B;
-  --accent1-color: #F68E95;
+  --accent1-color: #fda5ab;
   --accent2-color: #D83B46;
 
   /* Site fonts */
@@ -271,12 +271,30 @@ footer {
   text-align: center;
 }
 
-.tictactoe-container img {
+.tictactoe-container #game-board {
+  position: relative;
   max-width: 100%;
   height: 500px;
   width:fit-content;
   object-fit: cover;
 }
+
+.image-container #tic-letter {
+  position: absolute;
+  z-index: 2;
+  object-fit: cover;
+}
+
+/* Magic numbers for placement on the grid:
+top left- 400, 325
+top middle- 400, 510
+top right- 400, 685
+middle left- 563, 325
+middles- 563, 510
+middle right- 563, 685
+bottom left- 725, 325
+bottom middle- 725, 510
+bottom right- 725, 685 */
 
 #hangman-images {
   display: flex;
@@ -321,6 +339,7 @@ footer {
 
 .question-modal {
   position: fixed;
+  z-index: 10;
   top:0;
   left: 0;
   bottom: 0;
