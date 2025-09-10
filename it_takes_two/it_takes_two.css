@@ -271,6 +271,16 @@ footer {
   text-align: center;
 }
 
+.realgame-container #turn-text {
+  border-top: 3px solid var(--accent1-color);
+  border-bottom: 3px solid var(--accent1-color);
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .tictactoe-container #game-board {
   position: relative;
   max-width: 100%;
@@ -285,16 +295,33 @@ footer {
   object-fit: cover;
 }
 
+.image-container #win-bar {
+  position: absolute;
+  z-index: 3;
+  object-fit: cover;
+  height: 450px;
+  top: 462px;
+  left: 370px;
+}
+
 /* Magic numbers for placement on the grid:
-top left- 400, 325
-top middle- 400, 510
-top right- 400, 685
-middle left- 563, 325
-middles- 563, 510
-middle right- 563, 685
-bottom left- 725, 325
-bottom middle- 725, 510
-bottom right- 725, 685 */
+winbar left- 462, 370
+top left- 455, 325
+top middle- 455, 510
+top right- 455, 685
+middle left- 616, 325
+middles- 616, 510
+middle right- 616, 685
+bottom left- 780, 325
+bottom middle- 780, 510
+bottom right- 780, 685 */
+
+.tictactoe-container #error-text {
+  white-space: normal;
+  max-width: 345px;
+  min-height: 2.5em;
+  display: block;
+}
 
 #hangman-images {
   display: flex;
@@ -319,10 +346,6 @@ bottom right- 725, 685 */
   border: 2px solid var(--accent2-color);
 }
 
-#turn-text {
-  margin-bottom: 10px;
-}
-
 #take-turn {
   border-radius: 5px;
   height: 75px;
@@ -332,6 +355,7 @@ bottom right- 725, 685 */
   color: var(--secondary-color);
   font-family: var(--second-heading);
   margin: 20px;
+  margin-bottom: 0px;
 }
 
 

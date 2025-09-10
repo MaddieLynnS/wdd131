@@ -79,4 +79,6 @@ function closeQuestion() {
     }
 }
 
-document.querySelector("#take-turn").addEventListener("click", loadModal);
+document.querySelector("#take-turn").addEventListener("click", () => {
+    setTimeout(loadModal, 1500);
+});
